@@ -6,15 +6,21 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="renderer"
-		class="com.apress.prospring5.ch2.decoupled.StandardOutMessageRenderer"
-		p:messageProvider-ref="provider"/>
-	<bean id="provider" class="com.apress.prospring5.ch2.decoupled.HelloWorldMessageProvider"
-		c:message ="I hope that someone gets my message in a bottle!"/>
+<!-- 	<bean id="renderer" -->
+<!-- 		class="com.apress.prospring5.ch2.decoupled.StandardOutMessageRenderer" -->
+<!-- 		p:messageProvider-ref="provider"></bean> -->
+		
+<!-- 	<bean id="provider" class="com.apress.prospring5.ch2.decoupled.HelloWorldMessageProvider" -->
+<!-- 	> -->
+<!-- 		</bean> -->
+<!-- 		c:message ="I hope that someone gets my message in a bottle!"></bean> -->
+		
 	
 	<bean id="messageProvider" class="com.apress.prospring5.ch3.xml.ConfigurableMessageProvider">
 		<constructor-arg value="I hope that someone gets my message in a bottle" />
 	</bean>
 	
+<!-- 	<bean id="provider" class="com.apress.prospring5.ch2.decoupled.HelloWorldMessageProvider"> -->
+<!-- 	</bean> -->
 	
 </beans>

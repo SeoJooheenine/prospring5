@@ -11,7 +11,6 @@ public class ConfigurableMessageProvider implements MessageProvider{
 	
 	@Override
 	public String getMessage() {
-		// TODO Auto-generated method stub
 		return message;
 	}
 	

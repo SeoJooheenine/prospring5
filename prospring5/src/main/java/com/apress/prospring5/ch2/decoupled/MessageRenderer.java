@@ -5,4 +5,3 @@ public interface MessageRenderer {
 	void setMessageProvider(MessageProvider provider);
 	MessageProvider getMessageProvider();
 }
-
